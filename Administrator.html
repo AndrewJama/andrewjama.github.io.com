@@ -18,14 +18,14 @@
     
     <style>  
     .content-admin{
-        background-image: url("../Project/img/background/1.jpg");
+        background-image: url("../UI/img/background/1.jpg");
         background-size: cover;
         font-family: 'Lucida Sans';
         margin: 0px 10px 0px 120px;
-        width: 1182px;  
+        width: 1184px;  
              
     } 
-    .content-admin, input,select{
+    .content-admin, input[type="search"],input[type="button"]{
         padding: 8px;
         display: inline-block;
         border: 1px solid #ccc;
@@ -35,21 +35,13 @@
         background-color: black;
         color: white;
     }
+    #adminsearching{
+        background-color: green;
+    }
     hr{
         width: 1155px;
         margin-left: 0px;
         margin-top:-20px;
-    }
-    select{
-        width: 480px;
-    } 
-    #submitorder{
-        background-color: gree;
-        width: 480px;
-    }
-    #submitorders{
-        background-color: green;
-        width: 230px;
     }
     #previous{
         background-color: green;
@@ -83,10 +75,10 @@
     </header>
     <div class="nav">
             <ul>
-                <li class="home"><a href="Chome.html">Home</a>
+                <li class="home"><a href="#">Home</a>
                     <ul>
-                            <li><a href="ViewOrder.html">My Account</a></li>
-                    </ul>               
+                        <li><a href="AdminViewOrder.html">My Account</a></li>
+                </ul>               
                 </li>
                 <li class="mealdetails"><a href="AdminViewItems.html">Meals</a>
                     <ul>
@@ -98,20 +90,23 @@
                 </li>
                 <li class="orderdetails"><a href="#">Orders</a>
                     <ul>
-                            <li><a href="ViewOrder.html">View Orders</a></li>
+                            <li><a href="FastFoodOrders.html">View Orders</a></li>
+                            <li><a href="AddOrder.html">Make Order</a></li>
+                            <li><a href="Administrator.html">Manage Orders</a></li>
+                            <li><a href="AddMeal.html">Add Item</a></li>
                     </ul> 
                 </li>
 
                 <li class="contact"><a href="#">Contact Us</a>
                     <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Contact modes</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Modes</a></li>
                     </ul>
                 </li>
 
                 <li class="logout"><a href="#">Session</a>
                     <ul>
-                            <li><a href="Login.html">Log out</a></li>
+                        <li><a href="Login.html">Log out</a></li>
                     </ul> 
                 </li>
             </ul>
@@ -121,63 +116,51 @@
 
 	<div class="content-admin">
      
-    <label id = "title"><h2>Make Order</h2></label>
+    <label id = "title"><h2>Manage Orders</h2></label>
     <hr>
     <br>
-    <input id = "orderdateinput"type="text" placeholder="Enter Order Date"/>
-    <input type="email" placeholder="Enter Your Email">
     <br>
+    <input type="Search" placeholder="Enter Search Keyword"/>
+    <input id = "adminsearching" type="button" value="Search Orders">
     <br>
-    <select name="mealtype" id="mealtypes">
-        <option id="mt" value="mealtype">Select Meal Type</option>
-        <option value="break">Breakfast</option>
-        <option value="lunch">Lunch</option>
-        <option value="dinner">Dinner</option>
-        <option value="supper">Supper</option>
-    </select>   
-    <br>
-    <br>    
-    <input type="text" placeholder="Enter Meal Name">
-    <input type="text" placeholder="Enter Quantity Digit">
-    <br>
-    <br>   
-    <input type="text" placeholder="Price Per QUantity">
-    <input type="text" placeholder="Due amount here">
-    <br>
-    <br>
-    <input id="submitorder" type="submit" Value ='Add Order '/>
     <br>
     <br>
     <table>
-        <th id="Table-title" colspan="10"><h3>Current Order List</h3></th>
+        <th id="Table-title" colspan="10"><h3>Order Details</h3></th>
         <tr>
-            <th>No</th>
-            <th>Meal Type</th>
+            <th>Order Type</th>
+            <th>Client Email</th>
             <th>Meal Name</th>
-            <th>Status</th>
-            <th>QUantity</th>
-            <th>Price</th>
-            <th colspan="2">Action</th>
+            <th>Order Status</th>
+            <th colspan="3">Action</th>
         </tr>
         <tr>
-                <td>1</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
         </tr>
         <tr>
-                <td>2</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
-        </tr>  
-        <tr>
-                <td>3</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
-        </tr> 
-        <tr>
-                <td>4</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
         </tr>
         <tr>
-                <td>5</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
-        </tr>     
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+        </tr>
+        <tr>
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+        </tr>
+        <tr>
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+        </tr>                  
     </table>
     <br>
-    <input type="text" placeholder="Total Amount due">
-    <input id = "submitorders" type="submit" value = 'Submit All'/>
+    <br>
+    <input id = "previous"  type="button" value="Previous">
+    <input type="button" value = '1'/>
+    <input type="button" value='2'/>
+    <input type="button" value = '3'/>
+    <input type="button" value='4'/>
+    <input type="button" value='5'/>
+    <input id = "next" type="button" value = 'Next Item'/>
+    <br>
+    <br>
 	</div>
 	<!-- Javascript -->
 	<script src="js/scripts.js"></script>
@@ -186,7 +169,6 @@
 	<!-- Footer -->
 	<footer id="footadmin">
 
-            
                 Copyright © Andela BootCamp 2018, All rights reserved.
                 <br>
                 Designed and Developed by Andrew. 

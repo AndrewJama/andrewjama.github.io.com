@@ -18,11 +18,10 @@
     
     <style>  
     .content-admin{
-        background-image: url("../Project/img/background/1.jpg");
+        background-image: url("../UI/img/background/1.jpg");
         background-size: cover;
         font-family: 'Lucida Sans';
         margin: 0px 10px 0px 120px;
-        color: yellow; 
         width: 1200px;  
              
     } 
@@ -36,13 +35,14 @@
         background-color: black;
         color: white;
     }
-    #adminsearching{
-        background-color: green;
-    }
+    
     hr{
         width: 1155px;
         margin-left: 0px;
         margin-top:-20px;
+    }
+    #adminsearching{
+        background-color: green;
     }
     #previous{
         background-color: green;
@@ -76,10 +76,7 @@
     </header>
     <div class="nav">
             <ul>
-                <li class="home"><a href="#">Home</a>
-                    <ul>
-                        <li><a href="AdminViewOrder.html">My Account</a></li>
-                </ul>               
+                <li class="home"><a href="Chome.html">Home</a>               
                 </li>
                 <li class="mealdetails"><a href="AdminViewItems.html">Meals</a>
                     <ul>
@@ -91,10 +88,7 @@
                 </li>
                 <li class="orderdetails"><a href="#">Orders</a>
                     <ul>
-                            <li><a href="FastFoodOrders.html">View Orders</a></li>
-                            <li><a href="AddOrder.html">Make Order</a></li>
-                            <li><a href="Administrator.html">Manage Orders</a></li>
-                            <li><a href="AddMeal.html">Add Item</a></li>
+                            <li><a href="CAddOrder.html">Make Order</a></li>
                     </ul> 
                 </li>
 
@@ -107,7 +101,7 @@
 
                 <li class="logout"><a href="#">Session</a>
                     <ul>
-                        <li><a href="Login.html">Log out</a></li>
+                            <li><a href="Login.html">Log out</a></li>
                     </ul> 
                 </li>
             </ul>
@@ -117,39 +111,40 @@
 
 	<div class="content-admin">
      
-    <label id = "title"><h2>Manage Orders</h2></label>
+    <label id = "title"><h2>Client Account.</h2></label>
     <hr>
     <br>
     <br>
     <input type="Search" placeholder="Enter Search Keyword"/>
-    <input id = "adminsearching" type="button" value="Search Orders">
+    <input id = "adminsearching" type="button" value="Search">
     <br>
     <br>
     <br>
     <table>
-        <th id="Table-title" colspan="10"><h3>Order Details</h3></th>
+        <th id="Table-title" colspan="10"><h3>Your Order details.</h3></th>
         <tr>
             <th>Order Type</th>
-            <th>Client Email</th>
             <th>Meal Name</th>
+            <th>Order Date</th>
+            <th>Amount Paid</th>
+            <th>Amount Remaining</th>
             <th>Order Status</th>
-            <th colspan="3">Action</th>
         </tr>
         <tr>
-                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+                <td>BreakFast</td><td></td><td></td><td></td><td></td><th></th>
         </tr>
         <tr>
-                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+                <td>Lunch</td><td></td><td></td><td></td><td></td><th></th>
+        </tr>  
+        <tr>
+                <td>Dinner</td><td></td><td></td><td></td><td></td><th></th>
         </tr>
         <tr>
-                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
-        </tr>
+                <td>Supper</td><td></td><td></td><td></td><td></td><th></th>
+        </tr> 
         <tr>
-                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
-        </tr>
-        <tr>
-                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
-        </tr>                  
+                <td>Reservation</td><td></td><td></td><td></td><td></td><th></th>
+        </tr>    
     </table>
     <br>
     <br>

@@ -18,11 +18,10 @@
     
     <style>  
     .content-admin{
-        background-image: url("../Project/img/background/1.jpg");
+        background-image: url("../UI/img/background/1.jpg");
         background-size: cover;
         font-family: 'Lucida Sans';
         margin: 0px 10px 0px 120px;
-        color: yellow; 
         width: 1200px;  
              
     } 
@@ -77,7 +76,10 @@
     </header>
     <div class="nav">
             <ul>
-                <li class="home"><a href="Chome.html">Home</a>               
+                <li class="home"><a href="Aindex.html">Home</a>  
+                    <ul>
+                            <li><a href="AdminViewOrder.html">My Account</a></li>
+                    </ul>             
                 </li>
                 <li class="mealdetails"><a href="AdminViewItems.html">Meals</a>
                     <ul>
@@ -89,21 +91,23 @@
                 </li>
                 <li class="orderdetails"><a href="#">Orders</a>
                     <ul>
-                            <li><a href="CAddOrder.html">Make Order</a></li>
+                            <li><a href="AddOrder.html">Make Order</a></li>
+                            <li><a href="Administrator.html">Manage Orders</a></li>
+                            <li><a href="AddMeal.html">Add Item</a></li>
                     </ul> 
                 </li>
 
                 <li class="contact"><a href="#">Contact Us</a>
                     <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Modes</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact modes</a></li>
                     </ul>
                 </li>
 
                 <li class="logout"><a href="#">Session</a>
                     <ul>
                             <li><a href="Login.html">Log out</a></li>
-                    </ul> 
+                    </ul>
                 </li>
             </ul>
     </div>
@@ -112,7 +116,7 @@
 
 	<div class="content-admin">
      
-    <label id = "title"><h2>Client Account.</h2></label>
+    <label id = "title"><h2>Company Orders.</h2></label>
     <hr>
     <br>
     <br>
@@ -122,29 +126,29 @@
     <br>
     <br>
     <table>
-        <th id="Table-title" colspan="10"><h3>Your Order details.</h3></th>
+        <th id="Table-title" colspan="10"><h3>Completed Order Details.</h3></th>
         <tr>
             <th>Order Type</th>
             <th>Meal Name</th>
             <th>Order Date</th>
             <th>Amount Paid</th>
             <th>Amount Remaining</th>
-            <th>Order Status</th>
+            <th>Payment</th>
         </tr>
         <tr>
-                <td>BreakFast</td><td></td><td></td><td></td><td></td><th></th>
+                <td>BreakFast</td><td></td><td></td><td></td><td></td><th>Edit</th>
         </tr>
         <tr>
-                <td>Lunch</td><td></td><td></td><td></td><td></td><th></th>
+                <td>Lunch</td><td></td><td></td><td></td><td></td><th>Edit</th>
         </tr>  
         <tr>
-                <td>Dinner</td><td></td><td></td><td></td><td></td><th></th>
+                <td>Dinner</td><td></td><td></td><td></td><td></td><th>Edit</th>
         </tr>
         <tr>
-                <td>Supper</td><td></td><td></td><td></td><td></td><th></th>
+                <td>Supper</td><td></td><td></td><td></td><td></td><th>Edit</th>
         </tr> 
         <tr>
-                <td>Reservation</td><td></td><td></td><td></td><td></td><th></th>
+                <td>Reservation</td><td></td><td></td><td></td><td></td><th>Edit</th>
         </tr>    
     </table>
     <br>

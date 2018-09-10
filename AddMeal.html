@@ -18,18 +18,27 @@
     
     <style>  
     .content-admin{
-        background-image: url("../Project/img/background/1.jpg");
+        background-image: url("../UI/img/background/1.jpg");
         background-size: cover;
         font-family: 'Lucida Sans';
         margin: 0px 10px 0px 120px;
-        color: yellow; 
         width: 1182px;  
              
     } 
-    .content-admin, input,select{
+    .content-admin, input[type ="text"],select{
         padding: 8px;
         display: inline-block;
         border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+    }
+    input[type="submit"],input[type="button"]{
+        border: 1px solid green;
+        padding: 8px;
+        display: inline-block;
         border-radius: 4px;
         box-sizing: border-box;
         font-size: 18px;
@@ -42,31 +51,17 @@
         margin-top:-20px;
     }
     select{
-        width: 480px;
+        width: 236px;
     } 
-    #submitorder{
-        background-color: green;
-        width: 480px;
-    }
-    #submitorders{
-        background-color: green;
-        width: 230px;
-    }
     #previous{
         background-color: green;
     }
     #next{
         background-color: green;
     }
-    input[type="submit"],input[type="button"]{
-        border: 1px solid green;
-        padding: 8px;
-        display: inline-block;
-        border-radius: 4px;
-        box-sizing: border-box;
-        font-size: 18px;
-        background-color: black;
-        color: white;
+    #addmeal{
+        background-color: green;
+        width: 480px;
     }
     </style>
 
@@ -87,7 +82,7 @@
                 <li class="home"><a href="Aindex.html">Home</a>
                     <ul>
                             <li><a href="AdminViewOrder.html">My Account</a></li>
-                    </ul>             
+                    </ul>              
                 </li>
                 <li class="mealdetails"><a href="AdminViewItems.html">Meals</a>
                     <ul>
@@ -101,9 +96,9 @@
                     <ul>
                             <li><a href="FastFoodOrders.html">View Orders</a></li>
                             <li><a href="AdminViewItems.html">View Items</a></li>
+                            <li><a href="AddOrder.html">Make Order</a></li>
                             <li><a href="Administrator.html">Manage Orders</a></li>
-                            <li><a href="AddMeal.html">Add Item</a></li>
-                    </ul>  
+                    </ul> 
                 </li>
 
                 <li class="contact"><a href="#">Contact Us</a>
@@ -125,13 +120,10 @@
 
 	<div class="content-admin">
      
-    <label id = "title"><h2>Make Order</h2></label>
+    <label id = "title"><h2>Add Meal</h2></label>
     <hr>
     <br>
-    <input id = "orderdateinput"type="text" placeholder="Enter Order Date"/>
-    <input type="email" placeholder="Enter Your Email">
-    <br>
-    <br>
+    <input id = "mealname"type="text" placeholder="Enter Meal Name"/>
     <select name="mealtype" id="mealtypes">
         <option id="mt" value="mealtype">Select Meal Type</option>
         <option value="break">Breakfast</option>
@@ -141,26 +133,21 @@
     </select>   
     <br>
     <br>    
-    <input type="text" placeholder="Enter Meal Name">
-    <input type="text" placeholder="Enter Quantity Digit">
-    <br>
-    <br>   
-    <input type="text" placeholder="Price Per QUantity">
-    <input type="text" placeholder="Due amount here">
+    <input type="text" placeholder="Enter Price Per Quantity">  
+    <input type="text" placeholder="Specify Status">
     <br>
     <br>
-    <input id="submitorder" type="submit" Value ='Add Order '/>
+    <input id="addmeal" type="submit" Value ='Add Meal '/>
     <br>
     <br>
     <table>
-        <th id="Table-title" colspan="10"><h3>Current details here</h3></th>
+        <th id="Table-title" colspan="10"><h3>Registered Fast-Food-Fast Items</h3></th>
         <tr>
             <th>No</th>
             <th>Meal Type</th>
             <th>Meal Name</th>
             <th>Status</th>
-            <th>QUantity</th>
-            <th>Price</th>
+            <th>Unit Price</th>
             <th colspan="2">Action</th>
         </tr>
         <tr>
@@ -180,8 +167,13 @@
         </tr>     
     </table>
     <br>
-    <input type="text" placeholder="Total Ampount due">
-    <input id = "submitorders" type="submit" value = 'Submit All'/>
+    <input id = "previous"  type="button" value="Previous">
+    <input type="button" value = '1'/>
+    <input type="button" value='2'/>
+    <input type="button" value = '3'/>
+    <input type="button" value='4'/>
+    <input type="button" value='5'/>
+    <input id = "next" type="button" value = 'Next Item'/>
 	</div>
 	<!-- Javascript -->
 	<script src="js/scripts.js"></script>

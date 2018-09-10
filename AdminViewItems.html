@@ -18,7 +18,7 @@
     
     <style>  
     .content-admin{
-        background-image: url("../Project/img/background/1.jpg");
+        background-image: url("../UI/img/background/1.jpg");
         background-size: cover;
         font-family: 'Lucida Sans';
         margin: 0px 10px 0px 120px;
@@ -35,14 +35,13 @@
         background-color: black;
         color: white;
     }
-    
+    #adminsearching{
+        background-color: green;
+    }
     hr{
         width: 1155px;
         margin-left: 0px;
         margin-top:-20px;
-    }
-    #adminsearching{
-        background-color: green;
     }
     #previous{
         background-color: green;
@@ -76,9 +75,12 @@
     </header>
     <div class="nav">
             <ul>
-                <li class="home"><a href="Aindex.html">Home</a>              
+                <li class="home"><a href="Aindex.html">Home</a>
+                    <ul>
+                            <li><a href="AdminViewOrder.html">My Account</a></li>
+                    </ul>              
                 </li>
-                <li class="mealdetails"><a href="AdminViewItems.html">Meals</a>
+                <li class="mealdetails"><a href="#">Meals</a>
                     <ul>
                             <li><a href="#">Break Fast</a></li>
                             <li><a href="#">Lunch</a></li>
@@ -114,40 +116,40 @@
 
 	<div class="content-admin">
      
-    <label id = "title"><h2>Administrator Account.</h2></label>
+    <label id = "title"><h2>All Item Categories.</h2></label>
     <hr>
     <br>
     <br>
     <input type="Search" placeholder="Enter Search Keyword"/>
-    <input id = "adminsearching" type="button" value="Search">
+    <input id = "adminsearching" type="button" value="Search Orders">
     <br>
     <br>
     <br>
     <table>
-        <th id="Table-title" colspan="10"><h3>This is all your order details.</h3></th>
+        <th id="Table-title" colspan="10"><h3>Registered Fast-Food-Fast Items</h3></th>
         <tr>
-            <th>Order Type</th>
+            <th>No.</th>
+            <th>Meal Type</th>
             <th>Meal Name</th>
-            <th>Order Date</th>
-            <th>Amount Paid</th>
-            <th>Amount Remaining</th>
-            <th>Order Status</th>
+            <th>Meal Status</th>
+            <th>Unit Price</th>
+            <th colspan="2">Action</th>
         </tr>
         <tr>
-                <td>BreakFast</td><td></td><td></td><td></td><td></td><th></th>
+                <td>1</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
         </tr>
         <tr>
-                <td>Lunch</td><td></td><td></td><td></td><td></td><th></th>
+                <td>2</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
         </tr>  
         <tr>
-                <td>Dinner</td><td></td><td></td><td></td><td></td><th></th>
-        </tr>
-        <tr>
-                <td>Supper</td><td></td><td></td><td></td><td></td><th></th>
+                <td>3</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
         </tr> 
         <tr>
-                <td>Reservation</td><td></td><td></td><td></td><td></td><th></th>
-        </tr>    
+                <td>4</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
+        </tr>
+        <tr>
+                <td>5</td><td></td><td></td><td></td><td></td><th><input id ="edi" type ="button" value ="EDIT"/></th><th><input id ="del" type ="button" value="DELETE"/></th>
+        </tr> 
     </table>
     <br>
     <br>
