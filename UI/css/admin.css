@@ -1,0 +1,150 @@
+
+.banner{
+  background-color: green;
+  margin: 0px 120px 0px 120px;
+  height: 70px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  font-family: 'Lucida Sans';
+  color: white;
+
+}
+
+/***Body background**/
+body {
+    margin:0;
+    padding: 0;
+    background: gray;
+  }
+table{
+  width: 90%;
+  opacity: 0.9;
+}
+table, th, td {
+    border: 1px solid #fff;
+    text-align: center;
+    border-collapse: collapse;
+    color: #000;
+}
+th,td {
+    padding: 2px;
+}
+tr:nth-child(even){
+  background-color: gray;
+}
+tr:nth-child(odd){
+  background-color: #fff;
+}
+#Table-title{
+  background-color: black;
+  color: white;
+}
+  .nav{
+    background-color:black;
+    margin: 0px 120px 0px 120px;
+    text-align: center;
+    
+    }
+
+    .nav ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    position:relative;
+  
+    
+    }
+    .nav ul li{
+    display:inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    text-align: left;
+    
+    }
+    .nav ul li:hover{
+    background-color:black;
+    
+    }
+    .nav ul li a,visited {
+    color:white;
+    display: block;
+    padding:20px;
+    text-decoration:none;
+    }
+    .nav ul li a:hover {
+    color:white;
+    text-decoration:none;
+    
+    }
+    .nav ul li:hover ul {
+    
+    display:block;
+  }
+    .nav ul ul {
+    display:none;
+    position:absolute;
+    background-color:black;
+    border:5px solid black;
+    border-top:0;
+    margin-left:-5px;
+    min-width:80px;}
+    
+    .nav ul ul li{
+    display:block;
+    
+    }
+    .nav ul ul li a,visited{
+    padding:10px;
+    color:white;
+    }
+    .nav ul ul li a:hover {
+    color:#0683b4;
+    
+    }
+    #del{
+      width:100px;
+      height: 30px;
+      background-color: green;
+      color: white;
+      padding: 4px;
+    }
+    #edi{
+      width:100px;
+      height: 30px;
+      background-color: green;
+      color: white;
+      padding: 4px;
+    }
+    #decli{
+      width:100px;
+      height: 30px;
+      background-color: green;
+      color: white;
+      padding: 4px;
+    }
+    #compli{
+      width:100px;
+      height: 30px;
+      background-color: green;
+      color: white;
+      padding: 4px;
+    }
+    #acept{
+      width:100px;
+      height: 30px;
+      background-color: green;
+      color: white;
+      padding: 4px;
+    }
+  
+  /***** Footer *****/
+
+  #footadmin { 
+    padding-bottom: 10px;
+    padding-top: 10px; 
+    color: white; 
+    background-color: black;
+    margin: 0px 120px 0px 120px;
+    text-align: center;
+  }

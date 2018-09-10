@@ -1,0 +1,178 @@
+<!-- REGISTRATION PAGE CONTENT -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fast-Food-Fast</title>
+
+	<!-- CSS -->    
+    <link rel="stylesheet" href="css/admin.css">
+
+	<!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.png">
+    
+    <style>  
+    .content-admin{
+        background-image: url("../Project/img/background/1.jpg");
+        background-size: cover;
+        font-family: 'Lucida Sans';
+        margin: 0px 10px 0px 120px;
+        color: yellow; 
+        width: 1200px;  
+             
+    } 
+    .content-admin, input[type="search"],input[type="button"]{
+        padding: 8px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+    }
+    #adminsearching{
+        background-color: green;
+    }
+    hr{
+        width: 1155px;
+        margin-left: 0px;
+        margin-top:-20px;
+    }
+    #previous{
+        background-color: green;
+    }
+    #next{
+        background-color: green;
+    }
+    input[type="submit"],input[type="button"]{
+        border: 1px solid green;
+        padding: 8px;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+    }
+    </style>
+
+</head>
+
+<body>
+        
+    <header>
+            
+        <div class="banner">
+                                    
+                        <h1>FAST FOOD FAST</h1>
+        </div>
+    </div>
+    </header>
+    <div class="nav">
+            <ul>
+                <li class="home"><a href="#">Home</a>
+                    <ul>
+                        <li><a href="AdminViewOrder.html">My Account</a></li>
+                </ul>               
+                </li>
+                <li class="mealdetails"><a href="AdminViewItems.html">Meals</a>
+                    <ul>
+                            <li><a href="#">Break Fast</a></li>
+                            <li><a href="#">Lunch</a></li>
+                            <li><a href="#">Dinner</a></li>
+                            <li><a href="#">Supper</a></li>
+                    </ul>          
+                </li>
+                <li class="orderdetails"><a href="#">Orders</a>
+                    <ul>
+                            <li><a href="FastFoodOrders.html">View Orders</a></li>
+                            <li><a href="AddOrder.html">Make Order</a></li>
+                            <li><a href="Administrator.html">Manage Orders</a></li>
+                            <li><a href="AddMeal.html">Add Item</a></li>
+                    </ul> 
+                </li>
+
+                <li class="contact"><a href="#">Contact Us</a>
+                    <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Modes</a></li>
+                    </ul>
+                </li>
+
+                <li class="logout"><a href="#">Session</a>
+                    <ul>
+                        <li><a href="Login.html">Log out</a></li>
+                    </ul> 
+                </li>
+            </ul>
+    </div>
+
+		<!-- Admin content -->
+
+	<div class="content-admin">
+     
+    <label id = "title"><h2>Manage Orders</h2></label>
+    <hr>
+    <br>
+    <br>
+    <input type="Search" placeholder="Enter Search Keyword"/>
+    <input id = "adminsearching" type="button" value="Search Orders">
+    <br>
+    <br>
+    <br>
+    <table>
+        <th id="Table-title" colspan="10"><h3>Order Details</h3></th>
+        <tr>
+            <th>Order Type</th>
+            <th>Client Email</th>
+            <th>Meal Name</th>
+            <th>Order Status</th>
+            <th colspan="3">Action</th>
+        </tr>
+        <tr>
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+        </tr>
+        <tr>
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+        </tr>
+        <tr>
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+        </tr>
+        <tr>
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+        </tr>
+        <tr>
+                <td>BreakFast</td><td></td><td></td><td></td><td><input id="acept" type="button" value="Accept"/></td><th><input id="decli" type="button" value="Decline"/></th><th><input id="compli" type="button" value="Complete"/></th>
+        </tr>                  
+    </table>
+    <br>
+    <br>
+    <input id = "previous"  type="button" value="Previous">
+    <input type="button" value = '1'/>
+    <input type="button" value='2'/>
+    <input type="button" value = '3'/>
+    <input type="button" value='4'/>
+    <input type="button" value='5'/>
+    <input id = "next" type="button" value = 'Next Item'/>
+    <br>
+    <br>
+	</div>
+	<!-- Javascript -->
+	<script src="js/scripts.js"></script>
+</body>
+
+	<!-- Footer -->
+	<footer id="footadmin">
+
+                Copyright © Andela BootCamp 2018, All rights reserved.
+                <br>
+                Designed and Developed by Andrew. 
+            
+        </footer>
+</html>
